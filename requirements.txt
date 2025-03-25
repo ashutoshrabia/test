@@ -1,0 +1,9 @@
+fastapi==0.115.0
+uvicorn==0.30.6
+sentence-transformers==2.2.2
+transformers==4.20.1  # Downgraded to match sentence-transformers
+huggingface_hub==0.7.0
+faiss-cpu==1.7.4
+numpy==1.26.4
+pandas==2.2.2
+pydantic==2.9.2
