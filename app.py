@@ -196,4 +196,6 @@ async def search_documents_get(q: str, top_k: int = 5):
     return {"results": results}
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=7860)
+    import os
+    port = int(os.getenv("PORT", 7860))  # Use PORT from env, default to 7860 locally
+    uvicorn.run(app, host="0.0.0.0", port=port)
